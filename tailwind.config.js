@@ -10,7 +10,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: theme => ({
-                "login-bg": "url('/images/voto.jpg')"
+                "login-bg": "url('/images/login.jpg')"
             }),
             fontFamily: {
                 sans: ["Nunito", ...defaultTheme.fontFamily.sans]
