@@ -19,6 +19,7 @@ class CreateCandidatosTable extends Migration
             $table->foreignId('id_partido');
             $table->char('nombre', 150);
             $table->integer('edad');
+            $table->binary('imagen');
             $table->timestamps();
         });
     }

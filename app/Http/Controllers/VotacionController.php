@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Http;
 
 class VotacionController extends Controller
 {
@@ -13,8 +14,9 @@ class VotacionController extends Controller
      */
     public function index()
     {
-
-        return view('votacion');
+        $respuesta = Http::get('https://pokeapi.co/api/v2/pokemon');
+        $pokemon = $respuesta->json();
+        return view('votacion', compact('pokemon'));
     }
 
     /**
