@@ -17,7 +17,9 @@ class CandidatoController extends Controller
     public function index()
     {
 
-        return Candidato::all();
+            return Candidato::all();
+
+
     }
 
     /**

@@ -19,5 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('candidatos', CandidatoController::class);
+Route::get('candidatos', [CandidatoController::class, 'index'])
+       ->name('candidatos');
 Route::resource('votacion', VotacionController::class);

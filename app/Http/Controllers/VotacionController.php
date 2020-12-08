@@ -14,9 +14,11 @@ class VotacionController extends Controller
      */
     public function index()
     {
-        $respuesta = Http::get('https://pokeapi.co/api/v2/pokemon');
-        $pokemon = $respuesta->json();
-        return view('votacion', compact('pokemon'));
+
+       $respuesta = Http::get('http://voteecu.test/api/candidatos');
+       $candidatos = $respuesta->json();
+       return view('votacion', compact('candidatos'));
+
     }
 
     /**

@@ -5,26 +5,29 @@
         </h2>
     </x-slot>
 
- 
-    <!---->
+
+    <!--Filtro de candidatos-->
 
     <section>
-      <div class="py-6">
-        <ul class="flex ml-8">
-          <li class="mr-3">
-          <a class="inline-block border border-blue-500 rounded py-1 px-3 bg-blue-500 text-white" href="#">Presidente</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-1 px-3" href="#">Vicepresidente</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-1 px-3" href="#">Alcalde</a>
-          </li>
-        </ul>
-      </div>
-  
-  
+
+    <div id="candidatos">
+
+    </div>
+
     </section>
+
+
+    <section>
+{{-- @foreach ($candidatos as $candidato) --}}
+<div id="cartas" class="grid grid-cols-3">
+{{-- {{$candidato->nombre}} --}}
+</div>
+{{-- @endforeach --}}
+
+
+    </section>
+
+
 
 
 </x-app-layout>

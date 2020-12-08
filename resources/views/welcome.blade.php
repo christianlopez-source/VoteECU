@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 
-       
+
 
         <style>
             body {
@@ -22,7 +22,7 @@
         </style>
     </head>
     <body>
-     
+
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-screen-xl mx-auto">
     <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -37,10 +37,10 @@
               <a href="#" aria-label="Home">
               <img class="h-14 w-auto sm:h-14" src="{{asset('images/ecuador.svg')}}" alt="Logo">
               </a>
-             
+
             </div>
           </div>
-          
+
         </nav>
       </div>
 
@@ -48,8 +48,8 @@
         <div class="sm:text-center lg:text-left">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
             VoteEcu
-           
-            
+
+
           </h2>
           <span class="text-indigo-600 font-extrabold text-4x2 tracking-tight leading-8">¡El voto es secreto!</span>
           <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
@@ -76,6 +76,6 @@
   <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{{asset('images/bg.jpg')}}" alt="">
   </div>
 </div>
-    
+
     </body>
 </html>
